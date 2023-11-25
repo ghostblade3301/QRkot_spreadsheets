@@ -25,7 +25,7 @@ async def spreadsheets_create(wrapper_services: Aiogoogle) -> str:
     spreadsheet_body = {
         'properties': {
             'title': f'Отчёт от {datetime_now}',
-            'locale': 'ru_RU',
+            'locale': LOCALE,
         },
         'sheets': [{
             'properties': {
